@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>devnamedelite | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: '#0A0F1D',
+                        accent: '#3B82F6',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand text-gray-100 font-sans antialiased selection:bg-accent selection:text-white">
+
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-brand/70 border-b border-gray-800">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                devnamedelite
+            </a>
+            <nav class="space-x-6 text-sm font-medium text-gray-400">
+                <a href="#about" class="hover:text-white transition">About</a>
+                <a href="#projects" class="hover:text-white transition">Projects</a>
+                <a href="#contact" class="hover:text-white transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 pt-24 pb-16 text-center md:text-left md:flex md:items-center md:justify-between gap-12">
+        <div class="space-y-6 max-w-2xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                Hi, I am <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">devnamedelite</span>
+            </h1>
+            <p class="text-lg text-gray-400 leading-relaxed">
+                A passionate developer focused on building clean, functional, and beautiful digital experiences. Turning code into reality.
+            </p>
+            <div class="pt-2">
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-blue-600/20">
+                    Get In Touch
+                </a>
+            </div>
+        </div>
+        <div class="mt-12 md:mt-0 flex justify-center">
+            <div class="relative w-48 h-48 rounded-2xl bg-gradient-to-tr from-blue-500 to-purple-600 p-1 rotate-3 hover:rotate-0 transition duration-300">
+                <div class="w-full h-full bg-brand rounded-2xl flex items-center justify-center">
+                    <span class="text-5xl">💻</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="border-gray-800 max-w-5xl mx-auto my-8">
+
+    <section id="about" class="max-w-5xl mx-auto px-6 py-12 space-y-8">
+        <h2 class="text-2xl font-bold border-l-4 border-blue-500 pl-3 text-gray-200">About Me</h2>
+        <p class="text-gray-400 max-w-3xl leading-relaxed">
+            Welcome to my space! I love exploring new technologies, solving complex logic, and creating optimized software. Whether it's frontend design or backend architecture, I always aim for the "elite" standard.
+        </p>
+        
+        <div class="space-y-4">
+            <h3 class="text-sm font-semibold tracking-wider text-gray-500 uppercase">Tech Stack & Tools</h3>
+            <div class="flex flex-wrap gap-2">
+                <span class="bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium">JavaScript</span>
+                <span class="bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium">React</span>
+                <span class="bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium">Node.js</span>
+                <span class="bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium">Tailwind CSS</span>
+                <span class="bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium">Python</span>
+                <span class="bg-gray-800 text-gray-300 px-3 py-1.5 rounded-lg text-xs font-medium">Git & GitHub</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="max-w-5xl mx-auto px-6 py-12 space-y-8">
+        <h2 class="text-2xl font-bold border-l-4 border-blue-500 pl-3 text-gray-200">Featured Projects</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-gray-900/50 border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition group">
+                <h3 class="text-lg font-bold text-gray-100 group-hover:text-blue-400 transition">Awesome Web App</h3>
+                <p class="text-gray-400 text-sm mt-2">A full-stack application built to make workflows easier and more interactive.</p>
+                <div class="mt-4 flex gap-2">
+                    <span class="text-xs text-gray-500 font-mono">#React</span>
+                    <span class="text-xs text-gray-500 font-mono">#Firebase</span>
+                </div>
+            </div>
+            <div class="bg-gray-900/50 border border-gray-800 rounded-2xl p-6 hover:border-gray-700 transition group">
+                <h3 class="text-lg font-bold text-gray-100 group-hover:text-blue-400 transition">Elite UI Kit</h3>
+                <p class="text-gray-400 text-sm mt-2">A collection of custom, reusable components designed for modern UI designs.</p>
+                <div class="mt-4 flex gap-2">
+                    <span class="text-xs text-gray-500 font-mono">#Tailwind</span>
+                    <span class="text-xs text-gray-500 font-mono">#HTML</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-16 text-center space-y-6">
+        <h2 class="text-2xl font-bold text-gray-200">Let's Connect</h2>
+        <p class="text-gray-400 max-w-md mx-auto text-sm">
+            Have a project in mind, want to collaborate, or just say hi? Drop me a line!
+        </p>
+        <div class="flex justify-center gap-6 pt-4">
+            <a href="https://github.com" target="_blank" class="text-gray-400 hover:text-white transition font-medium">GitHub</a>
+            <a href="mailto:your-email@example.com" class="text-gray-400 hover:text-blue-400 transition font-medium">Email</a>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-800 py-8 text-center text-xs text-gray-500">
+        <p>&copy; 2026 devnamedelite. Built with code.</p>
+    </footer>
+
+</body>
+</html>
